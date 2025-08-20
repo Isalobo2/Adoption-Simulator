@@ -52,45 +52,45 @@ public class Main {
                     System.out.println("\nAvailable Dogs:");
                     for (Dog dog : dogs) {
                         dog.displayInfo();
-                        System.out.println("Enter the number of the dog you would like to adopt: ");
-                        int dogNumber = input.nextInt(); //expecting user input to enter dog number
-                        if (dogNumber < 1 || dogNumber > 4) {
-                            System.out.println("Invalid Dog number. Please enter a  number between 1 and 4.");
 
-                        } else {
-                            if (dogNumber == 1) {
-                                System.out.println("You have adopted Peanut!");
-                            } else if (dogNumber == 2) {
-                                System.out.println("You have adopted Max!");
-                            } else if (dogNumber == 3) {
-                                System.out.println("You have adopted Daisy!");
-                            } else if (dogNumber == 4) {
-                                System.out.println("You have adopted Sadie!");
-                                if (petChoice == 'C' || petChoice == 'c') {
-                                    System.out.println("\nAvailable Cats:");
-                                    for (Cat cat : cats) {//displaying arraylist of all available cat objects
-                                        cat.displayInfo();
-                                        System.out.println("Enter the number of the cat you would like to adopt: ");
-                                        int catNumber = input.nextInt();
-                                        if (catNumber < 1 || catNumber > 4) {
-                                            System.out.print("Invalid cat number. Please enter a  number between 1 and 4.");
-                                            if (catNumber == 1) {
-                                                System.out.println("You have adopted Luna!");
-                                                if (catNumber == 2) {
-                                                    System.out.println("You have adopted Milo!");
-                                                    System.exit(0);
-                                                    if (catNumber == 3) {
-                                                        System.out.println("You have adopted Oreo!");
-                                                        if (catNumber == 4) {
-                                                            System.out.println("You have adopted Shadow!");
-                                                            ;
-                                                        }
-                                                    }
+                    }
+                    System.out.println("Enter the number of the dog you would like to adopt: ");
+                    int dogNumber = input.nextInt(); //expecting user input to enter dog number
+                    if (dogNumber < 1 || dogNumber > 4) {
+                        System.out.println("Invalid Dog number. Please enter a  number between 1 and 4.");
+
+                    }
+                    if (dogNumber == 1) {
+                        System.out.println("You have adopted Peanut!");
+                    } else if (dogNumber == 2) {
+                        System.out.println("You have adopted Max!");
+                    } else if (dogNumber == 3) {
+                        System.out.println("You have adopted Daisy!");
+                    } else if (dogNumber == 4) {
+                        System.out.println("You have adopted Sadie!");
+                        if (petChoice == 'C' || petChoice == 'c') {
+                            System.out.println("\nAvailable Cats:");
+                            for (Cat cat : cats) {//displaying arraylist of all available cat objects
+                                cat.displayInfo();
+                                System.out.println("Enter the number of the cat you would like to adopt: ");
+                                int catNumber = input.nextInt();
+                                if (catNumber < 1 || catNumber > 4) {
+                                    System.out.print("Invalid cat number. Please enter a  number between 1 and 4.");
+                                    if (catNumber == 1) {
+                                        System.out.println("You have adopted Luna!");
+                                        if (catNumber == 2) {
+                                            System.out.println("You have adopted Milo!");
+                                            System.exit(0);
+                                            if (catNumber == 3) {
+                                                System.out.println("You have adopted Oreo!");
+                                                if (catNumber == 4) {
+                                                    System.out.println("You have adopted Shadow!");
+                                                    ;
                                                 }
                                             }
-
                                         }
                                     }
+
                                 }
                             }
                         }
@@ -100,8 +100,6 @@ public class Main {
         }
     }
 }
-
-
 
 
 
